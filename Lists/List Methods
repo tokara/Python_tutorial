@@ -1,0 +1,36 @@
+#numbers = [6, 5, 2, 3, 8]
+#numbers.append(5)...add new number to list
+#numbers.remove(5)# to remove an item from list
+#numbers.insert(1, 5)# to insert item in a list..1 is index position in list, 5 is actual value to be added
+#numbers.clear()# to clear all items..
+#numbers.pop(5)# to remove last item on list
+
+#numbers.index(3)#check existence of an item in a list
+#print(numbers.index(1))
+
+#numbers.sort()..to sort list...ascending
+#...print(numbers)
+#numbers.reverse()...sort list descending order
+
+#numbers.(copy)...copy list
+#numbers2 = numbers.copy()...
+
+
+#removing similar items
+#numbers =[3,4,5,4,6,7,8]
+#for item in numbers:
+ #   if item == 4:
+  #      numbers.remove(item)
+#print(numbers)
+
+#removing duplicates
+numbers = [2,4,5,4,6,7,8,4]
+nodup = []
+for number in numbers:
+    if number not in nodup:
+        nodup.append(number)
+print(nodup)
+
+
+
+

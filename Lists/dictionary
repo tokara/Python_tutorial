@@ -1,0 +1,30 @@
+#Dictionaries#******
+customer ={
+    "name": "john smith",
+    "age": 30,
+    "is_verified": True
+
+}
+customer["name"] = "1980"
+#print(customer["birthday"])
+print(customer.get("birthday", "jan 1 1990"))
+print(customer.get("name"))
+#exercice# print phone number as "one" "two" "three"..#
+customer ={
+        "phone" : 1234,
+        }
+customer["phone"] = " one two three four"
+print(customer.get ("phone"))
+
+phone = input("Phone: ")
+digits_mapping = {
+    "1": "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four",
+}
+output = ""
+for ch in phone:
+    output += digits_mapping.get(ch, "!") +  " "
+print(output)
+
